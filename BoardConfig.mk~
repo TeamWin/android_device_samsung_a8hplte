@@ -25,7 +25,7 @@ TARGET_BOOTLOADER_BOARD_NAME := universal5433
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
 BOARD_KERNEL_SEPARATED_DT := true
 # Extracted with libbootimg
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/a8hplte/dtb
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/a8hplte/dtb.img
 
 # /proc/partitions * BLOCK_SIZE (512)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 14900000
