@@ -8,13 +8,6 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/a8hplte/overlay
 LOCAL_PATH := device/samsung/a8hplte
 
 ###########################################################
-### FLAT DEVICE TREE
-###########################################################
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dtb.img:dt.img
-
-###########################################################
 ### RAMDISK
 ###########################################################
 
@@ -22,7 +15,6 @@ PRODUCT_PACKAGES += \
     fstab.universal5433 \
     init.carrier.rc \
     init.recovery.universal5433.rc \
-    init.samsung.rc \
     init.universal5433.rc \
     init.universal5433.usb.rc \
     init.universal5433.wifi.rc \

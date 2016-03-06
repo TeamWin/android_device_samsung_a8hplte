@@ -1,0 +1,13 @@
+/boot            emmc      /dev/block/mmcblk0p9                               flags=backup=1;display="BOOT"
+/recovery        emmc      /dev/block/mmcblk0p10                              flags=backup=1;display="RECOVERY"
+/system          ext4      /dev/block/mmcblk0p19                              flags=backup=1;display="SYSTEM";wipeingui
+/data            ext4      /dev/block/mmcblk0p22                              length=-16384 flags=backup=1;display="DATA";wipeingui
+/cache           ext4      /dev/block/mmcblk0p20
+/preload         ext4      /dev/block/mmcblk0p21
+/efs1            emmc      /dev/block/mmcblk0p3		                      flags=backup=1;display=EFS
+/efs2            emmc      /dev/block/mmcblk0p4                               flags=backup=1;subpartitionof=/efs1
+/efs3            emmc      /dev/block/mmcblk0p5                               flags=backup=1;subpartitionof=/efs1
+/efs4            emmc      /dev/block/mmcblk0p6                               flags=backup=1;subpartitionof=/efs1
+/external_sd     vfat      /dev/block/mmcblk1p1 /dev/block/mmcblk1            flags=display="Micro SDcard";storage;wipeingui;removable
+/radio           emmc      /dev/block/mmcblk0p13		              flags=backup=1;display="Modem"
+/usbstorage	 vfat	   /dev/block/sda1			              flags=display="USB Storage";storage;removable
