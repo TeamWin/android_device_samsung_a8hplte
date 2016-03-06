@@ -170,7 +170,7 @@ BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5433
 TARGET_OTA_ASSERT_DEVICE := a8hplte,SM-A800I,A800i
-
+TW_THEME := portrait_hdpi
 # SeLinux
 BOARD_SEPOLICY_DIRS := \
 	device/samsung/a8hplte/sepolicy
