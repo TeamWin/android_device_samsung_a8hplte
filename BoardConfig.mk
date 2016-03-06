@@ -170,10 +170,21 @@ BOARD_MODEM_TYPE := m7450
 # RIL.java overwrite
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
 
-# Recovery
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5433
-TARGET_OTA_ASSERT_DEVICE := a8hplte,SM-A800I,A800i
+# TWRP specific build flags
 TW_THEME := portrait_hdpi
+RECOVERY_SDCARD_ON_DATA := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+TW_BRIGHTNESS_PATH := "/sys/devices/13900000.dsim/backlight/panel/brightness"
+TW_MAX_BRIGHTNESS := 255
+TW_INTERNAL_STORAGE_PATH := "/data/media/0"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_NO_REBOOT_BOOTLOADER := true
+TW_HAS_DOWNLOAD_MODE := true
+DEVICE_RESOLUTION := 1080 x 1920
+
 # SeLinux
 BOARD_SEPOLICY_DIRS := \
 	device/samsung/a8hplte/sepolicy
