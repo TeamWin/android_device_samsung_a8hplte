@@ -18,15 +18,10 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a15
+TARGET_CPU_VARIANT := cortex-a5
 
 TARGET_BOOTLOADER_BOARD_NAME := universal5433
 
-#kernel
-
-TARGET_PREBUILT_KERNEL := device/samsung/a8hplte/kernel/zImage
-BOARD_KERNEL_BASE := 0x10000000
-BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
 BOARD_KERNEL_SEPARATED_DT := true
 # Extracted with libbootimg
@@ -46,9 +41,11 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_POWERHAL_VARIANT := universal5433
 
 # Kernel
-TARGET_KERNEL_CONFIG := eos_exynos5433-trelte_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/trelte
-
+#TARGET_KERNEL_CONFIG := eos_exynos5433-trelte_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/trelte
+TARGET_PREBUILT_KERNEL := device/samsung/a8hplte/kernel/zImage
+BOARD_KERNEL_BASE := 0x10000000
+BOARD_KERNEL_PAGESIZE := 2048
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Use these flags if the board has a ext4 partition larger than 2gb
