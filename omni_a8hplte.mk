@@ -16,7 +16,7 @@
 
 $(call inherit-product, device/samsung/a8hplte/full_a8hplte.mk)
 
-PRODUCT_NAME := aosp_a8hplte
+PRODUCT_NAME := omni_a8hplte
 
 PRODUCT_PACKAGES += \
     Launcher3
