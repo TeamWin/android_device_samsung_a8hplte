@@ -2,7 +2,7 @@
 PRODUCT_RELEASE_NAME := a8hplte
 
 # Inherit some common EOS stuff.
-$(call inherit-product, vendor/eos/config/common_full_phone.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit nfc enhanced configuration
 #$(call inherit-product, vendor/eos/config/nfc_enhanced.mk)
