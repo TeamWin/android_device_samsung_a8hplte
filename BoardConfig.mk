@@ -1,6 +1,6 @@
 USE_CAMERA_STUB := true
 
-LOCAL_PATH := device/samsung/treltexx
+LOCAL_PATH := device/samsung/a8hplte
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -27,7 +27,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
 BOARD_KERNEL_SEPARATED_DT := true
 # Extracted with libbootimg
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/treltexx/dtb.img
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/a8hplte/dtb.img
 
 # /proc/partitions * BLOCK_SIZE (512)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 7340032
@@ -125,7 +125,7 @@ BOARD_HDMI_INCAPABLE := true
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Hardware
-BOARD_HARDWARE_CLASS += device/samsung/treltexx/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/a8hplte/cmhw
 
 # WIFI
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
@@ -169,11 +169,11 @@ BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5433
-TARGET_OTA_ASSERT_DEVICE := trelte,treltexx,tre3g,tre3gxx
+TARGET_OTA_ASSERT_DEVICE := a8hplte,SM-A800I,A800i
 
 # SeLinux
 BOARD_SEPOLICY_DIRS := \
-	device/samsung/treltexx/sepolicy
+	device/samsung/a8hplte/sepolicy
 
 BOARD_SEPOLICY_UNION := \
 	app.te \

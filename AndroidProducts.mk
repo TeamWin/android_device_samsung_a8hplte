@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_treltexx.mk \
-    $(LOCAL_DIR)/full_treltexx.mk
+    $(LOCAL_DIR)/omni_a8hplte.mk \
+    $(LOCAL_DIR)/full_a8hplte.mk

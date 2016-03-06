@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/treltexx/full_treltexx.mk)
+$(call inherit-product, device/samsung/a8hplte/full_a8hplte.mk)
 
-PRODUCT_NAME := aosp_treltexx
+PRODUCT_NAME := aosp_a8hplte
 
 PRODUCT_PACKAGES += \
     Launcher3

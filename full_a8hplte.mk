@@ -21,14 +21,14 @@ PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/treltexx/device.mk)
+$(call inherit-product, device/samsung/a8hplte/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := full_treltexx
-PRODUCT_DEVICE := treltexx
+PRODUCT_NAME := full_a8hplte
+PRODUCT_DEVICE := a8hplte
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-N910C
+PRODUCT_MODEL := SM-A800I
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=treltexx
+    PRODUCT_NAME=a8hplte

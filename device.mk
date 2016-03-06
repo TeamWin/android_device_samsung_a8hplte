@@ -3,9 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/treltexx/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/a8hplte/overlay
 
-LOCAL_PATH := device/samsung/treltexx
+LOCAL_PATH := device/samsung/a8hplte
 
 ###########################################################
 ### FLAT DEVICE TREE
@@ -378,11 +378,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product-if-exists, build/target/product/full.mk)
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/samsung/treltexx/treltexx-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/a8hplte/a8hplte-vendor.mk)
 
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi/exynos5433/exynos5433.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_treltexx
-PRODUCT_DEVICE := treltexx
+PRODUCT_NAME := full_a8hplte
+PRODUCT_DEVICE := a8hplte
