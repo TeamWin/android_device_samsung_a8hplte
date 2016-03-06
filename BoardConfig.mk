@@ -22,6 +22,9 @@ TARGET_CPU_VARIANT := cortex-a15
 
 TARGET_BOOTLOADER_BOARD_NAME := universal5433
 
+#kernel
+
+TARGET_PREBUILT_KERNEL := device/samsung/a8hplte/prebuilt/zImage
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
