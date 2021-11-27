@@ -364,7 +364,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_large_cache_width=4096 \
     ro.hwui.text_large_cache_height=4096
 
-$(call inherit-product-if-exists, build/target/product/full.mk)
+$(call inherit-product-if-exists, build/target/product/embedded.mk)
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/samsung/a8hplte/a8hplte-vendor.mk)
